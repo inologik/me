@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>David McGhee</title>
+<meta name="description" content="The page of David | I am the security data manager for a multi-billion dollar company with a degree in astrophysics. Contact me for opportunities.">
+<link rel="canonical" href="http://www.mcghee.me/"/>
+<meta name="keywords" content="David, McGhee, Ross, R, ., Isle of Man, United Kingdom, analyst, website, project, programmer, design, data, scientist, infographic, business, intelligence, astrophysics, personal, website, cv, keele, university, pokerstars, stars group, axa, investments, utmost wealth">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300');
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5em;
+  color: #3d464d;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* DAVID R MCGHEE STYLING */
+.header h1 {
+	font-size:2.85em;
+	font-weight:450;
+	background: linear-gradient(88deg,red,yellow);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: rgba(0,0,0,0);
+	animation: hue 10s infinite linear;
+}
+
+h1, p {user-select: none;}
+
+@keyframes hue {
+from {
+	filter: hue-rotate(0deg);
+}
+to {
+	filter: hue-rotate(-360deg);
+}
+}
+
+.outer {
+	display: table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.inner {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95vw;
+}
+
+
+.summary {
+	position: absolute;
+	margin-top: 12.5vh;
+	font-size: 0.85em;
+	width: 85vw;
+	margin-left: 5.5%;
+	margin-right: auto;
+	color: black;
+}
+
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.3;
+  z-index: -100;
+}
+	
+	
+	
+/* styling of hamburger menu */
+/* ------------------------- */
+
+a {
+  color: inherit;
+}
+
+.menu-item, .menu-open-button {
+  background: white;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  top: 20px;
+  color: #3d464d;
+  text-align: center;
+  line-height: 80px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+
+.menu-open {
+  display: none;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background: #3d464d;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12.5px;
+  margin-top: -1.5px;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.hamburger-1 {
+  -webkit-transform: translate3d(0, -8px, 0);
+  transform: translate3d(0, -8px, 0);
+}
+.hamburger-2 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.hamburger-3 {
+  -webkit-transform: translate3d(0, 8px, 0);
+  transform: translate3d(0, 8px, 0);
+}
+.menu-open:checked + .menu-open-button .hamburger-1 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+  transform: translate3d(0, 0, 0) rotate(45deg);
+}
+.menu-open:checked + .menu-open-button .hamburger-2 {
+  -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+  transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+.menu-open:checked + .menu-open-button .hamburger-3 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+  transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+.menu {
+  position: absolute;
+  left: 50%;
+  margin-left: -190px;
+  padding-top: 20px;
+  padding-left: 190px;
+  width: 380px;
+  height: 250px;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+
+
+/* ---------------------- */
+/* CHANGE COLOUR OF HOVER */
+.menu-item:hover {
+  background: white;
+  color: rgba(255,140,0,0.95);
+}
+/* ---------------------- */
+/* ---------------------- */
+
+
+
+
+.menu-item:nth-child(3) {
+  transition-duration: 70ms;
+}
+.menu-item:nth-child(4) {
+  transition-duration: 130ms;
+}
+.menu-item:nth-child(5) {
+  transition-duration: 190ms;
+}
+.menu-item:nth-child(6) {
+  transition-duration: 250ms;
+}
+.menu-item:nth-child(7) {
+  transition-duration: 310ms;
+}
+
+.menu-open-button {
+  z-index: 2;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 400ms;
+  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer;
+  z-index: 99;
+  border: 0.7px solid red;  
+  animation: hue 10s infinite linear, onload 1.5s linear;
+
+}
+
+@keyframes onload {
+0% {
+  -webkit-transform: scale(1, 1) translate3d(0, 0, 0);
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+}
+60% {
+  -webkit-transform: scale(1, 1) translate3d(0, 0, 0);
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+}
+80% {
+  -webkit-transform: scale(1, 1) translate3d(0, 0, 0);
+  transform: scale(1.3, 1.3) translate3d(0, 0, 0);
+}
+100% {
+  -webkit-transform: scale(1, 1) translate3d(0, 0, 0);
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+}
+}
+
+.menu-open-button:hover {
+  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+  transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+  border: none;
+}
+.menu-open:checked ~ .menu-item {
+  transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+/* ---------------------- */
+/* LOCATION OF MENU ITEMS */
+.menu-open:checked ~ .menu-item:nth-child(3) {
+  transition-duration: 160ms;
+  -webkit-transform: translate3d(114.42548px, 11.48084px, 0);
+  transform: translate3d(100px, 75px, 0);
+  z-index: 10;
+  background-color: rgba(0,0,0,0);
+}
+.menu-open:checked ~ .menu-item:nth-child(4) {
+  transition-duration: 240ms;
+  -webkit-transform: translate3d(77.18543px, 85.2491px, 0);
+  transform: translate3d(40px, 125px, 0);
+  z-index: 10;
+  background-color: rgba(0,0,0,0);
+}
+.menu-open:checked ~ .menu-item:nth-child(5) {
+  transition-duration: 320ms;
+  -webkit-transform: translate3d(0.09158px, 114.99996px, 0);
+  transform: translate3d(-42px, 125px, 0);
+  z-index: 10;
+  background-color: rgba(0,0,0,0);
+}
+.menu-open:checked ~ .menu-item:nth-child(6) {
+  transition-duration: 400ms;
+  -webkit-transform: translate3d(-77.04956px, 85.37192px, 0);
+  transform: translate3d(-100px, 79px, 0);
+  z-index: 10;
+  background-color: rgba(0,0,0,0);
+}
+/* ---------------------- */
+/* ---------------------- */
+
+
+
+/* ------------------------- */
+</style>
+
+</head>
+
+<body>
+
+<nav class="menu">
+  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+  <label class="menu-open-button" for="menu-open">
+    <span class="hamburger hamburger-1"></span>
+    <span class="hamburger hamburger-2"></span>
+    <span class="hamburger hamburger-3"></span>
+  </label>
+  
+  <a href="" class="menu-item colour"> <i class="fa fa-bullhorn"></i> </a>
+  <a href="" class="menu-item colour"> <i class="fa fa-file-text-o"></i> </a>
+  <a href="" class="menu-item colour"> <i class="fa fa-line-chart"></i> </a>
+  <a href="" class="menu-item colour"> <i class="fa fa-home"></i> </a>
+
+</nav>
+
+
+<div class="header">
+	<div class="outer">
+	  <div class="middle">
+		<div class="inner">
+		  <h1>David R. McGhee</h1>
+		  <p>A problem solver</p>
+		  <p class="summary">I'm the security data analyst for a multi-billion dollar company with a degree in astrophysics. Website coming soon.</p>
+		</div>
+	  </div>
+	</div>
+</div>
+
+
+</body>
+
+<script>
+// Some random colors
+//const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+const colors = ["red","blue","green", "violet", "yellow"];
+
+
+const numBalls = 50;
+const balls = [];
+
+for (let i = 0; i < numBalls; i++) {
+  let ball = document.createElement("div");
+  ball.classList.add("ball");
+  ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+  ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+  ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+  ball.style.transform = `scale(${Math.random()})`;
+  ball.style.width = `${Math.random()*0.5}em`;
+  ball.style.height = ball.style.width;
+  
+  balls.push(ball);
+  document.body.append(ball);
+}
+
+// Keyframes
+balls.forEach((el, i, ra) => {
+  let to = {
+    x: Math.random() * (i % 2 === 0 ? -11 : 11),
+    y: Math.random() * 12
+  };
+
+  let anim = el.animate(
+    [
+      { transform: "translate(0, 0)" },
+      { transform: `translate(${to.x}rem, ${to.y}rem)` }
+    ],
+    {
+      duration: (Math.random() + 1) * 2000, // random duration
+      direction: "alternate",
+      fill: "both",
+      iterations: Infinity,
+      easing: "ease-in-out"
+    }
+  );
+});
+
+</script>
+
+</html>
